@@ -1,44 +1,47 @@
 <template>
-	<div class="header">
-		<div class="back"></div>
-		<slot></slot>
-	</div>
+  <div class="header">
+    <span class="header-left">
+      <slot name="title"></slot>
+    </span>
+    <span class="header-right co-fr">
+      <slot name="content"></slot>
+    </span>
+  </div>
 </template>
 <script>
-	export default {
-		name: 'v-header'
-	}
+  export default {
+    name: "v-header"
+  };
 </script>
 <style lang="less" scoped>
-	.header {
-		position: fixed;
-		left: 0;
-		top: 0;
-		right: 0;
+  .header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
 		bottom: 0;
+		
+		width: 100%;
 
-		height: 40px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: 1px solid #000;
-		.back {
-			/*position: relative;*/
-			width: 40px;
-			font-size: 30px;
-			&:after {
-				position: absolute;
-				content: '';
-				display: block;
-				width: 16px;
-				height: 16px;
-				border-style: solid;
-				border-color: #259bec;
-				border-width: 2px 0 0 2px;
-				transform: translate(-50%, -50%) rotate(-45deg);
-				top: 50%;
-				left: 50%;
-			}
-		}
-	}
+    z-index: 999;
+
+    height: 50px;
+    padding: 0 10px 0 50px;
+    background-color: rgb(72, 183, 235);
+    .header-left {
+      width: 230px;
+      line-height: 50px;
+      font-size: 20px;
+      word-spacing: 0px;
+      letter-spacing: 0;
+      color: #ffffff;
+    }
+    .header-right {
+      width: 160px;
+      font-size: 12px;
+      line-height: 50px;
+      color: #ffffff;
+      opacity: 0.5;
+    }
+  }
 </style>

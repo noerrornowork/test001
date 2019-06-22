@@ -14,6 +14,33 @@ body {
   padding-right: constant(safe-area-inset-right); 
   padding-bottom: constant(safe-area-inset-bottom);
 }
+ul,
+ol { list-style-type: none; }
+table { border-spacing: 0; border-collapse: collapse; }
+th,
+td { word-wrap: break-word; }
+b { font-weight: normal; }
+i,
+em,
+address { font-style: normal; }
+img { border: none; vertical-align: top; }
+a {text-decoration: none; outline: none; }
+a:link,a:visited{ color: #666;}
+a:hover,a:active,a:focus { outline: none; color: #333; }
+/**表单**/
+label { vertical-align: middle; }
+input,
+textarea,
+select,
+button {color: #666; outline: none; vertical-align: middle; }
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button { -webkit-border-radius: 0; -webkit-appearance: none;
+    border: 1px solid transparent;
+    outline: none;}
+input, textarea, keygen, select, button{font-family: "微软雅黑";}
+textarea {resize: none; }
 div{
     outline: 0 !important;
     -webkit-text-size-adjust: none;
@@ -24,6 +51,7 @@ input:focus, textarea:focus, select:focus {
     outline-offset: -2px;
     outline: -webkit-focus-ring-color auto 5px;
 }
+
 /**文本框**/
 .co-input{
     margin: 0px;
@@ -35,9 +63,6 @@ input:focus, textarea:focus, select:focus {
     -webkit-appearance: none;
     display: block;
     background-color:transparent;
-}
-ul,li{
-    list-style: none;
 }
 [v-cloak]{
     display: none;

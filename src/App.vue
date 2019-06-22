@@ -1,24 +1,22 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <tab></tab>
   </div>
 </template>
 
 <script>
-import Tab from '@/base/Tab.vue'
-export default {
-  name: 'App',
-  components: {
-    Tab
-  },
-  data () {
-    return {
-      msg: 'Hello VUX'
+  export default {
+    name: "App",
+    components: {},
+    data() {
+      return {};
     }
-  }
-}
+  };
 </script>
 
 <style>
+  #app {
+    font-family: "Arial Negreta", "Arial";
+    font-weight: 700;
+  }
 </style>

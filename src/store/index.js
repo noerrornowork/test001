@@ -1,17 +1,18 @@
-import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+import state from './state/state'
+import mutations from './mutations/mutations'
+import actions from './actions/actions'
+import getters from './getters/getters'
 
-const state = {}
+const isDev = process.env.NODE_ENV === 'development'
 
-const mutations = {}
-
-const actions = {}
-
-export default new Vuex.Store({
-	state,
-	actions,
-	mutations,
-	getters
-})
+export default () => {
+	return new Vuex.Store({
+		strict: isDev,
+		state,
+		actions,
+		mutations,
+		getters
+	})
+}
