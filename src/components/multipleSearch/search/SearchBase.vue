@@ -129,58 +129,63 @@
   </div>
 </template>
 <script>
-  import VHeader from "@/base/VHeader";
-  import SecondMenu from "@/base/SecondMenu";
-  export default {
-    name: "search-base",
-    components: {
-      VHeader,
-      SecondMenu
-    },
-    data() {
-      const pickerOptions = {
-        disabledDate(time) {
-          return time.getTime() > Date.now();
-        },
-        shortcuts: [
-          {
-            text: "今天",
-            onClick(picker) {
-              picker.$emit("pick", new Date());
-            }
-          },
-          {
-            text: "昨天",
-            onClick(picker) {
-              const date = new Date();
-              date.setTime(date.getTime() - 3600 * 1000 * 24);
-              picker.$emit("pick", date);
-            }
-          },
-          {
-            text: "一周前",
-            onClick(picker) {
-              const date = new Date();
-              date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
-              picker.$emit("pick", date);
-            }
+import VHeader from '@/base/VHeader'
+import SecondMenu from '@/base/SecondMenu'
+export default {
+  name: 'search-base',
+  components: {
+    VHeader,
+    SecondMenu
+  },
+  data () {
+    const pickerOptions = {
+      disabledDate (time) {
+        return time.getTime() > Date.now()
+      },
+      shortcuts: [
+        {
+          text: '今天',
+          onClick (picker) {
+            picker.$emit('pick', new Date())
           }
-        ]
-      };
-      return {
-        form: {
-          type: []
         },
-        pickerOptions,
-        startDate: "",
-        endDate: "",
-        updateTime: ""
-      };
-    },
-    methods: {
-      onSubmit() {}
+        {
+          text: '昨天',
+          onClick (picker) {
+            const date = new Date()
+            date.setTime(date.getTime() - 3600 * 1000 * 24)
+            picker.$emit('pick', date)
+          }
+        },
+        {
+          text: '一周前',
+          onClick (picker) {
+            const date = new Date()
+            date.setTime(date.getTime() - 3600 * 1000 * 24 * 7)
+            picker.$emit('pick', date)
+          }
+        }
+      ]
     }
-  };
+    return {
+      form: {
+        type: []
+      },
+      pickerOptions,
+      theme: '',
+      wordFrequence: '',
+      contain: '',
+      word: '',
+      accuracy: '',
+      startDate: '',
+      endDate: '',
+      updateTime: ''
+    }
+  },
+  methods: {
+    onSubmit () {}
+  }
+}
 </script>
 <style lang="less" scoped>
   .search-base {

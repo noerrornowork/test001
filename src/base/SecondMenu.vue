@@ -35,100 +35,100 @@
   </div>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        isCollapse: false
-      };
-    },
-    methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-        switch (key) {
-          case 1:
-            this.$router.replace({
-              path: "/onlineWriting/retrieveArticle"
-            });
-            break;
-          case 3:
-            this.$router.replace({
-              path: "/multipleSearch/searchA"
-            });
-            break;
-        }
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-        switch (key) {
-          case 1:
-            this.$router.replace({
-              path: "/onlineWriting"
-            });
-            break;
-          case 3:
-            this.$router.replace({
-              path: "/multipleSearch"
-            });
-            break;
-        }
-      },
-      goToOnlineWriting() {
-        this.$router.replace({
-          path: "/onlineWriting"
-        });
-      },
-      goToRetrieveArticle() {
-        this.$router.replace({
-          path: "/retrieveArticle"
-        });
-      },
-      goToOnlineWord() {
-        this.$router.replace({
-          path: "/onlineWord"
-        });
-      },
-      goToOnlineImage() {
-        this.$router.replace({
-          path: "/onlineImage"
-        });
-      },
-      goToResourceMonitor() {
-        this.$router.replace({
-          path: "/resourceMonitor"
-        });
-      },
-      goToMultipleSearch() {
-        this.$router.replace({
-          path: "/multipleSearch"
-        });
-      },
-      goToSearch_01() {
-        this.$router.replace({
-          path: "/searchA"
-        });
-      },
-      goToSearch_02() {
-        this.$router.replace({
-          path: "/searchB"
-        });
-      },
-      goToSearch_03() {
-        this.$router.replace({
-          path: "/searchC"
-        });
-      },
-      goToSearch_04() {
-        this.$router.replace({
-          path: "/searchD"
-        });
-      },
-      goToSearch_05() {
-        this.$router.replace({
-          path: "/searchE"
-        });
-      }
+export default {
+  data () {
+    return {
+      isCollapse: false
     }
-  };
+  },
+  methods: {
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
+      switch (key) {
+        case 1:
+          this.$router.replace({
+            path: '/onlineWriting/retrieveArticle'
+          })
+          break
+        case 3:
+          this.$router.replace({
+            path: '/multipleSearch/searchA'
+          })
+          break
+      }
+    },
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
+      switch (key) {
+        case 1:
+          this.$router.replace({
+            path: '/onlineWriting'
+          })
+          break
+        case 3:
+          this.$router.replace({
+            path: '/multipleSearch'
+          })
+          break
+      }
+    },
+    goToOnlineWriting () {
+      this.$router.replace({
+        path: '/onlineWriting'
+      })
+    },
+    goToRetrieveArticle () {
+      this.$router.replace({
+        path: '/retrieveArticle'
+      })
+    },
+    goToOnlineWord () {
+      this.$router.replace({
+        path: '/onlineWord'
+      })
+    },
+    goToOnlineImage () {
+      this.$router.replace({
+        path: '/onlineImage'
+      })
+    },
+    goToResourceMonitor () {
+      this.$router.replace({
+        path: '/resourceMonitor'
+      })
+    },
+    goToMultipleSearch () {
+      this.$router.replace({
+        path: '/multipleSearch'
+      })
+    },
+    goToSearch_01 () {
+      this.$router.replace({
+        path: '/searchA'
+      })
+    },
+    goToSearch_02 () {
+      this.$router.replace({
+        path: '/searchB'
+      })
+    },
+    goToSearch_03 () {
+      this.$router.replace({
+        path: '/searchC'
+      })
+    },
+    goToSearch_04 () {
+      this.$router.replace({
+        path: '/searchD'
+      })
+    },
+    goToSearch_05 () {
+      this.$router.replace({
+        path: '/searchE'
+      })
+    }
+  }
+}
 </script>
 <style lang="less" scoped>
   .second-menu {

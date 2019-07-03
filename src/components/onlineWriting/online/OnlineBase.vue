@@ -89,33 +89,33 @@
   </div>
 </template>
 <script>
-  import VHeader from "@/base/VHeader";
-  import SecondMenu from "@/base/SecondMenu";
-  export default {
-    name: "online-writing",
-    components: {
-      VHeader,
-      SecondMenu
-    },
-    data() {
-      return {
-        labelPosition: "left",
-        form: {
-          name: "",
-          region: "",
-          date1: "",
-          date2: "",
-          delivery: false,
-          type: [],
-          resource: "",
-          desc: ""
-        }
-      };
-    },
-    methods: {
-      onSubmit() {}
+import VHeader from '@/base/VHeader'
+import SecondMenu from '@/base/SecondMenu'
+export default {
+  name: 'online-writing',
+  components: {
+    VHeader,
+    SecondMenu
+  },
+  data () {
+    return {
+      labelPosition: 'left',
+      form: {
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
+      }
     }
-  };
+  },
+  methods: {
+    onSubmit () {}
+  }
+}
 </script>
 <style lang="less" scoped>
   .online-base {

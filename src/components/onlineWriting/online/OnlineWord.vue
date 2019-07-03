@@ -90,39 +90,39 @@
 </template>
 
 <script>
-  import VHeader from "@/base/VHeader";
-  import SecondMenu from "@/base/SecondMenu";
-  export default {
-    name: "online-word",
-    components: {
-      VHeader,
-      SecondMenu
-    },
-    data() {
-      return {
-        labelPosition: "left",
-        form: {
-          title: "美国防科技创新机构与外界交流的各种举措",
-          author: "袁成",
-          keyword_01: "国防",
-          keyword_02: "工业",
-          keyword_03: "美国",
-          keyword_04: "",
-          region: "",
-          date1: "",
-          date2: "",
-          delivery: false,
-          type: [],
-          resource: "",
-          desc:
-            "目前在美军的科研（RDT&E，即研究、发展、试验和鉴定）序列中，科技（S&T）研究位于前端，由基础研究、应用研究和先期技术发展（ATD）3 部分组成，主要目的是研究基础技术、突破先进技术和开展技术集成验证（原型机试验）。美军在科技领域的成就，不但为其在全球确立优势地位打牢技术根基，又可通过转向民用引领全球产业变革。目前美军的科技机构主要由国防预先研究计划局（DARPA），以及空军研究实验室（AFRL）、海军研究实验室（NRL）、陆军研究实验室（ARL）等国防实验室组成"
-        }
-      };
-    },
-    methods: {
-      onSubmit() {}
+import VHeader from '@/base/VHeader'
+import SecondMenu from '@/base/SecondMenu'
+export default {
+  name: 'online-word',
+  components: {
+    VHeader,
+    SecondMenu
+  },
+  data () {
+    return {
+      labelPosition: 'left',
+      form: {
+        title: '美国防科技创新机构与外界交流的各种举措',
+        author: '袁成',
+        keyword_01: '国防',
+        keyword_02: '工业',
+        keyword_03: '美国',
+        keyword_04: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc:
+            '目前在美军的科研（RDT&E，即研究、发展、试验和鉴定）序列中，科技（S&T）研究位于前端，由基础研究、应用研究和先期技术发展（ATD）3 部分组成，主要目的是研究基础技术、突破先进技术和开展技术集成验证（原型机试验）。美军在科技领域的成就，不但为其在全球确立优势地位打牢技术根基，又可通过转向民用引领全球产业变革。目前美军的科技机构主要由国防预先研究计划局（DARPA），以及空军研究实验室（AFRL）、海军研究实验室（NRL）、陆军研究实验室（ARL）等国防实验室组成'
+      }
     }
-  };
+  },
+  methods: {
+    onSubmit () {}
+  }
+}
 </script>
 
 <style lang="less" scoped>

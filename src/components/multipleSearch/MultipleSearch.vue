@@ -17,39 +17,39 @@
   </div>
 </template>
 <script>
-  import VHeader from "@/base/VHeader";
-  import SecondMenu from "@/base/SecondMenu";
-  export default {
-    name: "multiple-search",
-    components: {
-      VHeader,
-      SecondMenu
-    },
-    data() {
-      return {
-        labelPosition: "left",
-        form: {
-          name: "",
-          region: "",
-          date1: "",
-          date2: "",
-          delivery: false,
-          type: [],
-          resource: "",
-          desc: ""
-        }
-      };
-    },
-    methods: {
-      onSubmit() {}
+import VHeader from '@/base/VHeader'
+import SecondMenu from '@/base/SecondMenu'
+export default {
+  name: 'multiple-search',
+  components: {
+    VHeader,
+    SecondMenu
+  },
+  data () {
+    return {
+      labelPosition: 'left',
+      form: {
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
+      }
     }
-  };
+  },
+  methods: {
+    onSubmit () {}
+  }
+}
 </script>
 <style lang="less" scoped>
   .multiple-search {
     position: absolute;
     left: 0;
-    top: 0px;
+    top: 0;
     right: 0;
     bottom: 0;
 
